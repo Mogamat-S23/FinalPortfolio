@@ -59,6 +59,12 @@ html,body{
     height: 100px !important;
 } */
 
+/* skills */
+#services{
+    background-image: url(../Images/retrowave-synthwave.gif);
+    background-position-x: center;
+}
+
 .bgColor{
     transition: 10s;
    background: linear-gradient(
@@ -105,7 +111,17 @@ html,body{
     box-shadow: 13px 5px 10px 0 rgba(0,0,0,0.08);
   transition: box-shadow 0.3s ease-in-out;
 }
+.card{
+    border: 2px solid blue;
+}
 
+.card img{
+    aspect-ratio: 1;
+    object-fit: cover;
+    /* object-position: center; */
+    width: 200px;
+    /* text-align: center; */
+}
 /*  */
 #Charles {
     aspect-ratio: 1;
