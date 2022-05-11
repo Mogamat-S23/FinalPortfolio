@@ -25,15 +25,71 @@ html,body{
 
     
 }
-
+ /* image sizing */
 .projects-container img{
     max-height: 400px;
     max-width: 100%;
     flex-grow: 1;
     object-fit: cover;
     border-radius: 10%;
+    transition: .8s;
+    opacity: .5;
     
 }
+.img-container {
+    position: relative;
+}
+/* BECOMES OPAQUE WHEN HOVER */
+.img-container:hover > img{
+    opacity: .75;
+}
+/* CENTERS BUTTONS IN IMG */
+.btn-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* SETS BTN TO INVISIBLE */
+.img-container .btn-center .btn {
+    visibility: hidden;
+    opacity: 0;
+    transition: .8s;
+}
+/* SHOWS BUTTONS WHEN HOVER */
+.img-container:hover>.btn-center .btn {
+    visibility: visible;
+    opacity: 1;
+}
+.btn-center  a:hover{
+    background-color: aqua;
+    color: yellowgreen;
+}
+
+
+/* contact form */
+
+.form-wrapper{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+
+/* skills */
+
+.card{
+    padding:5px;
+}
+
+
+
+
+
 
 .experience-container {
     border-left: 3px solid black;
