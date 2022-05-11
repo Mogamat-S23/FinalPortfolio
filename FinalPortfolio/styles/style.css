@@ -119,6 +119,9 @@ html,body{
 #services{
     background-image: url(../Images/retrowave-synthwave.gif);
     background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .bgColor{
@@ -179,7 +182,7 @@ html,body{
     /* text-align: center; */
 }
 /*  */
-#Charles {
+#testimonials img{
     aspect-ratio: 1;
     object-position: center;
     object-fit: cover ;
